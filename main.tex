@@ -1,0 +1,75 @@
+\input{setup/preamble.sty}
+\input{setup/macros.sty}
+
+\begin{document}
+    %%% Sections %%%
+    \tcbset{colframe=white,colback=white,arc=0mm, height=0.75\textheight}
+    \begin{tcolorbox}     
+        \adjustbox{valign=t}{\begin{minipage}{0.3\textwidth} %% Sidebar %% 
+            \begin{tcolorbox}[height=0.98\textheight, grow to left by=0.6cm, colback=backdrop,colframe=backdrop,arc=0mm]
+                % Headshot
+                \includegraphics[width=\textwidth]{images/Ricky.jpg} 
+                \vspace{1em}
+
+                \bigskip
+                \email{Email} 
+                \vspace{0.7em}
+
+                \phone{Phone number} 
+                \vspace{0.7em}
+                
+                \address{Location} \par \vspace{0.7em}
+                
+                \linkedin{LinkedIn Linkj}{LinkedIn} \par \vspace{0.7em}
+
+                \github{Github Link}{GitHub} \par \vspace{0.7em}
+
+                % Some jenky alignment of language proficiency
+                \vspace{1.0em}
+                \parbox{0.40\linewidth}{\textbf{Language Language Language}}
+                \parbox{0.40\linewidth}{proficiency \\proficiency \\proficiency}
+
+                \bigskip
+                \parbox{0.40\linewidth}{\textbf{License:}}\parbox{0.40\linewidth}{Code}
+
+                \subsection*{Skills}
+                    \skill{Skill}{3}                            
+            
+            \end{tcolorbox}
+        \end{minipage}} %% Side bar end
+        %%% Title %%%
+        \adjustbox{valign=t}{\begin{minipage}{0.65\textwidth} %% Main Page %%
+            \begin{tcolorbox}[grow to right by=1.45cm,height=0.08\textheight, colframe=title,colback=title,arc=0mm]
+                \name{Name}{\textit{Current Job Title}} % Name and Profession
+            \end{tcolorbox}
+            \begin{tcolorbox}[grow to right by=1.85cm,height=0.79\textheight,colframe=white,colback=white]
+                % Work expirence             
+                \section*{Work experience}
+                    \work{Title}{Duration}{Company}{ 
+                        Experience summary \\
+                        \textbf{Projects:} 
+                        \begin{itemize}
+                            \item short project description
+                        \end{itemize}
+                    }\par \vspace{0.7em}
+                % Education 
+                \section*{Education}
+                    \education{Education Title}{Timespan}{Location}{
+                        \textbf{Thesis:} \textit{Thesis title}
+                        \textbf{Elective courses:}
+                        \vspace{0.1em}
+                        \begin{itemize}
+                            \item Course
+                            \item ...
+                        \end{itemize}
+                        \vspace*{-\baselineskip}\leavevmode
+                    }
+                % Certifications
+                \section*{Certifications}
+                 \certification{Code}{Fullname}{Date aquired}{Expiry date} 
+            \end{tcolorbox}
+        \end{minipage} %% Main page end %%
+        }
+    \end{tcolorbox}
+
+\end{document}

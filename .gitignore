@@ -1,0 +1,10 @@
+# Ignore LaTeX build files
+*.aux
+*.dvi
+*.fdb*
+*.fls
+*.log
+*.pdf
+*.synctex*
+*.out
+/images/cv*

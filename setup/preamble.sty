@@ -1,0 +1,59 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% IMPORTS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[10pt,onesize,a4paper,titlepage]{article}
+
+%%%%%%%%%%%%%%% Formatting %%%%%%%%%%%%%%% 
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{adjustbox}
+\usepackage{geometry} % Margins
+\usepackage{sectsty} % Custom Sections
+
+%%%%%%%%%%%%%%% Font %%%%%%%%%%%%%%% 
+\usepackage{Archivo}
+\usepackage[T1]{fontenc}
+\sffamily
+
+%%%%%%%%%%%%%%% Graphics %%%%%%%%%%%%%%% 
+\usepackage{fontawesome5} % Icons
+\usepackage{graphicx} % Images
+\usepackage[most]{tcolorbox} % Color Box
+\usepackage{xcolor} % Colors
+\usepackage{tikz} % For Drawing Shapes
+\tcbuselibrary{breakable}
+
+
+%%%%%%%%%%%%%%% Miscelanous %%%%%%%%%%%%%%% 
+\usepackage{hyperref} % For Hyperlinks
+
+%%%%%%%%%%%%%%% Colors %%%%%%%%%%%%%%% 
+\definecolor{title}{HTML}{e6e6e6} % Color of the title
+\definecolor{bars}{HTML}{e6e6e6} % Color of the title
+\definecolor{backdrop}{HTML}{e6e6e6} % Color of the side column
+\definecolor{subtitle}{HTML}{606060} % 
+
+% Skillbars
+\definecolor{skillbar}{HTML}{ffffff} % Empty skill bars
+
+
+%%%%%%%%%%%%%%% Section Format %%%%%%%%%%%%%%% 
+\sectionfont{                     
+    \LARGE % Font size
+    \sectionrule{0pt}{0pt}{-8pt}{1pt} % Rule under Section name
+}
+
+\subsectionfont{
+    \Large % Font size
+    \fontfamily{phv}\selectfont % Font family
+    \sectionrule{5pt}{0pt}{0pt}{0pt} % Rule under Subsection name
+}
+
+%%%%%%%%%%%%%%% Margins and Headers %%%%%%%%%%%%%%%
+\geometry{
+  a4paper,
+  left=5mm,
+  right=5mm,
+  bottom=5mm,
+  top=5mm
+}
+
+\pagestyle{empty} % Empty Headers
